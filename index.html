@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+  <link href="css/style.css" rel="stylesheet"/>
+ </head>
+ <body>
+  <div id="content">
+  <!--top-->
+  <div class="top">
+	<img src="images/img1.jpg"/>
+  </div>
+  <div class="button">
+	<ul>
+		<li><a href="#">Home</a></li>
+		<li><a href="#">Brands</a></li>
+		<li><a href="#">Storys</a></li>
+		<li><a href="#">History</a></li>
+		<li><a href="#">About Me</a></li>
+	</ul>
+  </div>
+    <!--video-->
+	<div class="banner">
+		<div class="big">
+			<video src="images/Video (1).mp4" autoplay loop class="main"></video>
+		</div>
+		<div class="small">
+		<ul>
+			<li><video src="images/Video (9).mp4" class="sub"></video>
+				<div class="txt">
+					<h2>A Look at Spring 2015's</h2>
+					<p>A Look at Spring 2018's Attention-Grabbing Runways Technology Is Coming for </p>
+				</div>
+			</li>
+			<li><video src="images/Video (10).mp4" class="sub"></video>
+				<div class="txt">
+					<h2>A Look at Spring 2016's</h2>
+					<p>A Look at Spring 2018's Attention-Grabbing Runways Technology Is Coming for </p>
+				</div>
+			</li>
+			<li><video src="images/Video (11).mp4" class="sub"></video>
+				<div class="txt">
+					<h2>A Look at Spring 2017's</h2>
+					<p>A Look at Spring 2018's Attention-Grabbing Runways Technology Is Coming for </p>
+				</div>
+			</li>
+		</ul>
+		</div>
+	</div>
+	<!--video-->
+    <!--top-->
+	<!--news-->
+	<div class="news">
+		<img src="images/img3.jpg" class="logo"/>
+		<div class="newsBox">
+			<dl>
+				<dt><img src="images/img4.jpg"/></dt>
+				<dd><h2>Spring 2018's</h2></dd>
+				<dd>Start date:2019-04-01</dd>
+				<dd>End date:2019-04-30</dd>
+				<dd>ere costs have remained low, the company was able to bring back its $100 deal, but this time in even more styles.</dd>
+				<dd><img src="images/map1.png"/></dd>
+			</dl>
+
+			<dl>
+				<dt><img src="images/img5.jpg"/></dt>
+				<dd><h2>Spring 2018's</h2></dd>
+				<dd>Start date:2019-04-01</dd>
+				<dd>End date:2019-04-30</dd>
+				<dd>ere costs have remained low, the company was able to bring back its $100 deal, but this time in even more styles.</dd>
+				<dd><img src="images/map1.png"/></dd>
+			</dl>
+
+			<dl>
+				<dt><img src="images/img6.jpg"/></dt>
+				<dd><h2>Spring 2018's</h2></dd>
+				<dd>Start date:2019-04-01</dd>
+				<dd>End date:2019-04-30</dd>
+				<dd>ere costs have remained low, the company was able to bring back its $100 deal, but this time in even more styles.</dd>
+				<dd><img src="images/map1.png"/></dd>
+			</dl>
+
+			<dl>
+				<dt><img src="images/img7.jpg"/></dt>
+				<dd><h2>Spring 2018's</h2></dd>
+				<dd>Start date:2019-04-01</dd>
+				<dd>End date:2019-04-30</dd>
+				<dd>ere costs have remained low, the company was able to bring back its $100 deal, but this time in even more styles.</dd>
+				<dd><img src="images/map1.png"/></dd>
+			</dl>
+		</div>
+	</div>
+	<!--news-->
+	<!--walk-->
+	<div class="walk">
+		<img src="images/img8.jpg" class="logo"/>
+		<div class="walks">
+			<ul>
+			<li><img src="images/img9.jpg"/></li>
+			<li><img src="images/img10.jpg"/></li>
+			<li><img src="images/img11.jpg"/></li>
+			<li><img src="images/img12.jpg"/></li>
+			</ul>
+			<div class="topBox">
+				<video src="images/Video (17).mp4" class="sub"></video>
+				<img src="images/ok1.png"/>
+			</div>
+		</div>
+	</div>
+	<!--walk-->
+	<!--slider-->
+	<div class="slider">
+		<div class="best"><a href="#"><img src="images/ok3.png"/></a></div>
+		<div class="box"></div>
+	</div>
+	<!--slider-->
+  </div>
+  <script src="js/jquery-3.2.1.min.js"></script>
+  <script>
+  //video
+	$(".sub").hover(function(){
+		$(this).trigger('play');
+		$('.main').trigger('pause');
+	},function(){
+		$(this).trigger('pause');
+		$('.main').trigger('play');
+	});
+	//slider
+	var mark=1;
+	$('.best a').click(function(){
+		//alert(1);
+		if(mark==1){
+		$('.slider').animate({width:'260px'},500);
+		mark=0;
+		}else{
+		$('.slider').animate({width:'35px'},500);
+		mark=1;
+		}
+	});
+  </script>
+ </body>
+</html>

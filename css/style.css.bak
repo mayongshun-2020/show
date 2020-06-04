@@ -1,0 +1,203 @@
+/*public style*/
+*{
+	margin:0px;
+	padding:0px;
+}
+body{
+	font-size:12px;
+	font-family:"Arial";
+}
+ul li{
+	list-style:none;
+}
+a,img{
+	display:block;
+}
+a{
+	text-decoration:none;
+}
+h2{
+	color:red;
+	font-size:18px;
+	text-shadow:0 0 2px #000;
+}
+h3{
+	font-size:16px;
+}
+#content{
+	width:1330px;
+	margin:0px auto;
+	border:1px solid red;
+}
+/*top style*/
+.top img{
+	margin:10px auto;
+}
+.button{
+	width:100%;
+	height:60px;
+	line-height:60px;
+	background:#000;
+}
+.button ul li{
+	float:left;
+	padding:0px 10px;
+	font-size:18px;
+}
+.button ul li a{
+	color:#fff;
+}
+.button ul li a:hover{
+	color:#cc00ff;
+}
+/*video style*/
+.banner{
+	height:620px;
+	background:#000;
+	width:100%;
+}
+video{
+	width:100%;
+	height:100%;
+	display:block;
+}
+.banner .big{
+	width:1020px;
+	height:620px;
+	float:left;
+}
+.banner .small{
+	width:280px;
+	height:620px;
+	float:left;
+	margin-left:20px;
+}
+.small ul li{
+	margin-top:35px;
+	border:2px solid #a90dfa;
+	box-shadow:0 0 5px #fff;
+	position:relative;
+	overflow:hidden;
+}
+.small ul li .txt{
+	width:100%;
+	height:100%;
+	background:rgba(0,0,0,0.7);
+	position:absolute;
+	left:0;top:0;
+}
+.txt h2{
+	text-align:center;
+	line-height:65px;
+}
+.txt p{
+	margin-left:50px;
+	width:80%;
+	line-height:20px;
+	color:#fff;
+}
+.small ul li:hover .txt{
+	transform:translateY(210px)rotate(140deg);
+	transition:all 0.5s;
+}
+/*news style*/
+.news img.logo{
+	margin:10px auto;
+}
+.news .newsBox{
+	width:1300px;
+	height:650px;
+}
+.newsBox dl{
+	width:580px;
+	height:270px;
+	margin:30px;
+	float:left;
+	background:#f2f2f2;
+	box-shadow:0 0 1px #000;
+}
+.newsBox dl dt{
+	float:left;
+	width:285px;
+	height:240px;
+	margin:15px;
+}
+.newsBox dl dd{
+	float:left;
+	width:200px;
+	line-height:15px;
+	margin-top:13px;
+	margin-left:2px;
+}
+.newsBox dl dd img{
+	width:185px;
+	height:50px;
+	border:2px solid red;
+}
+.newsBox dl:hover{
+	box-shadow:0 0 5px #000;
+}
+/*walk style*/
+.walk{
+	width:1300px;
+	height:590px;
+	background:#000;
+	margin:10px auto;
+}
+.walk img.logo{
+	width:90%;
+	height:auto;
+	margin:10px auto;
+}
+.walk ul{
+	width:53%;
+	float:left;
+}
+.walk ul li{
+	float:left;
+	margin:20px;
+	box-shadow:0 0 10px #fff;
+}
+.walk .topBox{
+	width:550px;
+	height:435px;
+	float:left;
+	margin:30px;
+	position:relative;
+	overflow:hidden;
+}
+.topBox img{
+	position:absolute;
+	bottom:0;
+}
+.topBox:hover img{
+	transform:translateY(600px) rotate(140deg);
+	transition:all 1s;
+}
+/*silder style*/
+.slider{
+	width:35px;
+	height:100%;
+	background:red;
+	position:fixed;
+	right:0;top:0;
+	overflow:hidden;/*超出范围隐藏*/
+}
+.best{
+	width:37px;
+	height:100%;
+	background:#000;
+	position:absolute;
+	left:0px;top:0px;
+	z-index:99;
+}
+.best a{
+	margin-top:250px;
+}
+.box{
+	width:225px;
+	height:100%;
+	background:#ddd;
+	position:absolute;
+	right:0;top:0;
+}
